@@ -1,0 +1,57 @@
+.relative {
+	position: relative;
+	width:100%;
+	height: 1000px;
+	background-image: url(..images/glxback.jpg)
+}
+.galaxy {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left:3000px;
+    bottom:10px;
+    animation: galaxy infinite  alternate linear;
+    animation-duration: 10s;
+}
+@keyframes galaxy {
+    0%{left: 3000px;}
+    20%{left:3080px; transform: rotate(90deg);}
+    40%{left: 3360px; transform: rotate(180deg);}
+    60%{left: 3600px;  transform: rotate(270deg);}
+    80%{left: 4000px; transform: rotate(360deg);}
+    100%{left: 4600px; transform: rotate(0deg);}
+ }
+.cosmosguy{  
+     position: absolute;
+    width: 500px;
+    height: 500px;
+    bottom: 100px;
+    right: 1000px;
+    animation: cosmosguy 10s infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear;}
+@keyframes cosmosguy {
+   0%{bottom: 500px;right: 400px; transform: rotate(90deg);}
+   50%{bottom: 500px;right: 900px;transform: rotate(180deg);}
+   75%{right: 300px; bottom: 20px;transform: rotate(360deg);}
+   100%{bottom: 500px;right: 400px; transform: rotate(180deg);}
+}
+.spaceship{
+    position:absolute;
+    width: 700px;
+    height: 500px;
+    bottom:4000px;
+    right:2px;
+    animation: spaceship 5s infinite linear;
+    
+}
+@keyframes spaceship {
+    from{
+     right:100px;
+     bottom:4000px;
+    }
+    to{right:5000px;
+    bottom:0px;
+}
+
+}
